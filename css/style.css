@@ -1,0 +1,25 @@
+*{
+    text-align: center;
+    font-family: 'Verdana', sans-serif;
+}
+
+h1{
+ text-transform: uppercase;
+    
+}
+
+button{
+     border-radius: 0;
+     color: black;
+     background-color: whitesmoke;
+}
+
+button:hover{
+     color: whitesmoke;
+     background-color: black;
+}
+
+.imagen{
+     width: 100%;
+     margin:auto;
+}

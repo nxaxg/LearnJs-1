@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>BOM</title>
+    <script type="text/javascript">
+    <!--
+    
+    function askName(){
+        //1*
+        var name = prompt("Hola! Cúal es tu nombre?");
+        var message = "Hola <strong>" + name + "</strong>! Espero que tengas un buen día! <br>";
+        document.getElementById("message").innerHTML = message;
+        if(name != ""){
+                //2*
+               info = "Por cierto, estás utilizando <strong>" + navigator.appCodeName.toString() + "</strong> en una plataforma <strong>" + navigator.platform + "</strong>, no es así?"; 
+        }else{
+            location.href="boom.html";   
+        }
+        document.getElementById("info").innerHTML = info;
+        document.getElementById("btnSi").style.display="inline";
+        document.getElementById("btnNo").style.display="inline";
+    }
+        
+    function answerYes(){
+        var answer = "Lo sabíamos!<br>Aunque no deberías saber dicha información, por lo que este equipo se destruirá en 5 segundos";
+        document.getElementById("answer").innerHTML = answer;
+        //3*
+        setTimeout(selfDestruction, 5000);
+    }
+        
+    function answerNo(){
+        var answer = "Lo sentimos! :( <br>Te he fallado, por lo que este equipo se destruirá en 5 segundos";
+        document.getElementById("answer").innerHTML = answer;
+        setTimeout(selfDestruction, 5000);
+
+    }
+        
+    function selfDestruction(){
+        var ask = alert("BOOOOM ! ! ! !");
+        //4*
+        location.href = "boom.html";
+    }
+    
+    
+    -->
+    </script>
+</head>
+<body>
+    <h1>VVELCOME</h1>
+    <button onclick="askName();">Click aquí</button>
+    <p id="message"></p>
+    <p id="info"></p>
+    <button id="btnSi" onclick='answerYes();' style="display:none;">Si</button>
+    <button id="btnNo" onclick='answerNo();' style="display:none;">No</button>
+    </script>
+    <p id="answer"></p>
+</body>
+</html>
